@@ -12,78 +12,62 @@
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
         android:gravity="start"
-        app:title="Almac. Externo"
+        app:title="Externo"
         app:titleTextColor="@color/white">
 
         <ImageButton
             android:id="@+id/btnAgregarExterno"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="215dp"
             android:background="@drawable/btnredondo"
             android:src="@drawable/ic_baseline_add_circle_outline_24px"
-            android:text="Agregar archivo" />
+            android:text="Agregar archivo"
+            android:paddingLeft="175dp"/>
 
         <ImageButton
             android:id="@+id/btnAgregarExternoPublico"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="107dp"
             android:background="@drawable/btnredondo"
             android:src="@drawable/ic_baseline_add_circle_outline_24px_2"
-            android:text="Agregar archivo" />
+            android:text="Agregar archivo"
+            android:paddingLeft="20dp"/>
 
     </android.support.v7.widget.Toolbar>
 
-
-    <ImageView
-        android:id="@+id/imgPublico"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        android:src="@drawable/ic_baseline_add_circle_outline_24px"
-        android:layout_below="@id/toolbarExterno"
-        android:text="Agregar archivo" />
+    <LinearLayout
+        android:id="@+id/layoutOrden"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical">
 
     <TextView
         android:id="@+id/txtPublico"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/toolbarExterno"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp"
-        android:text="Externo Publico"/>
+        android:layout_marginTop="75dp"
+        android:text="Botón blanco para agregar archivo Externo Publico" />
 
-    <ImageView
-        android:id="@+id/imgPrivado"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/btnredondo"
-        android:src="@drawable/ic_baseline_add_circle_outline_24px_2"
-        android:layout_below="@id/imgPublico"
-        android:text="Agregar archivo" />
 
     <TextView
         android:id="@+id/txtPrivado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/imgPublico"
-        android:layout_marginTop="15dp"
         android:layout_marginBottom="15dp"
-        android:text="Externo Privado"/>
+        android:text="Botón negro para agregar archivo Externo Privaddo"/>
 
     <TextView
         android:id="@+id/pathExterno"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/imgPrivado"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp"/>
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"/>
 
     <ListView
         android:id="@+id/listExterno"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/pathExterno" />
+        android:layout_height="wrap_content" />
 
+</LinearLayout>
 </RelativeLayout>

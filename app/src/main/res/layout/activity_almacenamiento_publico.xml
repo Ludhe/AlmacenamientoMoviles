@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,64 +7,63 @@
     tools:context=".AlmacenamientoPublico"
     tools:showIn="@layout/activity_almacenamiento_publico">
 
-<android.support.v7.widget.Toolbar
-    android:id="@+id/toolbarPublico"
-    android:layout_width="match_parent"
-    android:layout_height="?attr/actionBarSize"
-    android:background="?attr/colorPrimary"
-    app:title="Agregar archivo publico"
-    app:titleTextColor="@color/white">
-</android.support.v7.widget.Toolbar>
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarPublico"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:gravity="start"
+        app:title="Agregar nuevo archivo público"
+        app:titleTextColor="@color/white">
+    </android.support.v7.widget.Toolbar>
 
-<TextView
-android:id="@+id/lblNombreArchivoPublico"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:layout_below="@+id/toolbarPublico"
-android:text="Nombre del archivo"
-android:textSize="20dp"
-android:layout_centerHorizontal="true"
-android:paddingTop="20dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
 
-<EditText
-android:id="@+id/txtNombreArchivoPublico"
-android:layout_centerHorizontal="true"
-android:layout_below="@+id/lblNombreArchivoPublico"
-android:paddingTop="20dp"
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:layout_marginLeft="45dp"/>
+    <TextView
+        android:id="@+id/lblNombreArchivoPublico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre del archivo"
+        android:textSize="20dp"
+        android:paddingTop="100dp"/>
 
 
-<TextView
-android:id="@+id/lblContentArchivoPublico"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:layout_below="@+id/txtNombreArchivoPublico"
-android:text="Contenido del archivo"
-android:textSize="20dp"
-android:layout_centerHorizontal="true"
-android:paddingTop="20dp"/>
+    <EditText
+        android:id="@+id/txtNombreArchivoPublico"
+        android:layout_below="@+id/lblNombreArchivoPublico"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
-<EditText
-android:id="@+id/txtContenidoArchivoPublico"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:ems="10"
-android:inputType="textMultiLine"
-android:layout_below="@id/lblContentArchivoPublico"
-android:paddingTop="20dp"
-android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/lblContentArchivoPublico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNombreArchivoPublico"
+        android:text="Contenido del archivo"
+        android:textSize="20dp"
+        android:paddingTop="20dp"/>
 
+    <EditText
+        android:id="@+id/txtContenidoArchivoPublico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:layout_below="@id/lblContentArchivoPublico"
+        android:paddingTop="20dp" />
 
-<Button
-android:id="@+id/btnAgregarArchivoPublico"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:text="Guardar Archivo"
-android:layout_centerHorizontal="true"
-android:layout_below="@id/txtContenidoArchivoPublico"
-android:layout_marginTop="60dp"/>
+    <Button
+        android:id="@+id/btnAgregarArchivoPublico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar Archivo"
+        android:layout_below="@id/txtContenidoArchivoPublico"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"/>
 
-
-    </RelativeLayout>
+</RelativeLayout>
+</RelativeLayout>

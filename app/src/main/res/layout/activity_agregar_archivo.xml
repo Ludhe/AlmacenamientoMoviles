@@ -17,24 +17,24 @@
         app:titleTextColor="@color/white">
     </android.support.v7.widget.Toolbar>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
     <TextView
         android:id="@+id/lblNombreArchivo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/toolbar"
         android:text="Nombre del archivo"
         android:textSize="20dp"
-        android:layout_centerHorizontal="true"
-        android:paddingTop="20dp"/>
+        android:paddingTop="100dp"/>
 
     <EditText
         android:id="@+id/txtNombreArchivo"
-        android:layout_centerHorizontal="true"
         android:layout_below="@+id/lblNombreArchivo"
         android:paddingTop="20dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="45dp"/>
+        android:layout_height="wrap_content" />
 
 
     <TextView
@@ -44,18 +44,16 @@
         android:layout_below="@+id/txtNombreArchivo"
         android:text="Contenido del archivo"
         android:textSize="20dp"
-        android:layout_centerHorizontal="true"
         android:paddingTop="20dp"/>
 
     <EditText
         android:id="@+id/txtContenidoArchivo"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textMultiLine"
         android:layout_below="@id/lblContentArchivo"
-        android:paddingTop="20dp"
-        android:layout_centerHorizontal="true"/>
+        android:paddingTop="20dp" />
 
 
     <Button
@@ -63,9 +61,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Guardar Archivo"
-        android:layout_centerHorizontal="true"
         android:layout_below="@id/txtContenidoArchivo"
-        android:layout_marginTop="60dp"/>
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"/>
 
 
+</RelativeLayout>
 </RelativeLayout>

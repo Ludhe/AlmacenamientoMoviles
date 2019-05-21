@@ -1,38 +1,44 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ues.ipam135.almacenamiento.MainActivity"
+    tools:showIn="@layout/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="ues.ipam135.almacenamiento.MainActivity"
-    tools:showIn="@layout/activity_main">
+    >
+<android.support.v7.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    android:gravity="start"
+    android:elevation="4dp"
+    app:title="Interno"
+    app:titleTextColor="@color/white">
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        android:gravity="start"
-        app:title="Almac. Interno"
-        app:titleTextColor="@color/white">
+    <ImageButton
+        android:id="@+id/btnAgregar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="225dp"
+        android:background="@drawable/btnredondo"
+        android:src="@drawable/ic_baseline_add_circle_outline_24px"
+        android:text="Agregar archivo" />
 
-        <ImageButton
-            android:id="@+id/btnAgregar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="215dp"
-            android:background="@drawable/btnredondo"
-            android:src="@drawable/ic_baseline_add_circle_outline_24px"
-            android:text="Agregar archivo" />
+</android.support.v7.widget.Toolbar>
 
-    </android.support.v7.widget.Toolbar>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
 
     <TextView
         android:id="@+id/path"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/toolbar"
         android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp"/>
+        android:layout_marginBottom="15dp"
+        android:paddingTop="50dp"/>
 
     <ListView
         android:id="@+id/list"
@@ -42,9 +48,12 @@
 
     <Button
         android:id="@+id/btnExterno"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/list"
-        android:text="Almacenamiento externo"/>
+        android:text="Almacenamiento externo"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"/>
 
+</RelativeLayout>
 </RelativeLayout>
