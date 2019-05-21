@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgregarArchivo"
+    tools:showIn="@layout/activity_agregar_archivo">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:gravity="start"
+        app:title="Agregar nuevo archivo"
+        app:titleTextColor="@color/white">
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/lblNombreArchivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:text="Nombre del archivo"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp"/>
+
+    <EditText
+        android:id="@+id/txtNombreArchivo"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/lblNombreArchivo"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"/>
+
+
+    <TextView
+        android:id="@+id/lblContentArchivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNombreArchivo"
+        android:text="Contenido del archivo"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp"/>
+
+    <EditText
+        android:id="@+id/txtContenidoArchivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:layout_below="@id/lblContentArchivo"
+        android:paddingTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+
+    <Button
+        android:id="@+id/btnAgregarArchivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar Archivo"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtContenidoArchivo"
+        android:layout_marginTop="60dp"/>
+
+
+</RelativeLayout>

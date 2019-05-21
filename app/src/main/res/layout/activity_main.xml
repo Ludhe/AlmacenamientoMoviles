@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ues.ipam135.almacenamiento.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:gravity="start"
+        app:title="Almac. Interno"
+        app:titleTextColor="@color/white">
+
+        <ImageButton
+            android:id="@+id/btnAgregar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="215dp"
+            android:background="@drawable/btnredondo"
+            android:src="@drawable/ic_baseline_add_circle_outline_24px"
+            android:text="Agregar archivo" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/path"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"/>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/path" />
+
+    <Button
+        android:id="@+id/btnExterno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list"
+        android:text="Almacenamiento externo"/>
+
+</RelativeLayout>
